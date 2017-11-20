@@ -18,6 +18,8 @@
 		B8ED3C1A1FC353F100B94DBA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED3C191FC353F100B94DBA /* MainViewController.swift */; };
 		B8ED3C1D1FC35ED800B94DBA /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED3C1C1FC35ED800B94DBA /* Animal.swift */; };
 		B8ED3C201FC35F7600B94DBA /* AnimalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED3C1F1FC35F7600B94DBA /* AnimalTests.swift */; };
+		B8ED3C251FC369D800B94DBA /* AnimalLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED3C241FC369D800B94DBA /* AnimalLogic.swift */; };
+		B8ED3C281FC371B500B94DBA /* AnimalLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED3C271FC371B500B94DBA /* AnimalLogicTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		B8ED3C191FC353F100B94DBA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B8ED3C1C1FC35ED800B94DBA /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		B8ED3C1F1FC35F7600B94DBA /* AnimalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTests.swift; sourceTree = "<group>"; };
+		B8ED3C241FC369D800B94DBA /* AnimalLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalLogic.swift; sourceTree = "<group>"; };
+		B8ED3C271FC371B500B94DBA /* AnimalLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalLogicTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +109,7 @@
 		B8ED3BE81FC34E6F00B94DBA /* ARProject */ = {
 			isa = PBXGroup;
 			children = (
-				B8ED3C1B1FC35EC000B94DBA /* Models */,
+				B8ED3C221FC369BB00B94DBA /* Entities */,
 				B8ED3BE91FC34E6F00B94DBA /* AppDelegate.swift */,
 				B8ED3BEB1FC34E6F00B94DBA /* art.scnassets */,
 				B8ED3BED1FC34E6F00B94DBA /* ViewController.swift */,
@@ -121,7 +125,7 @@
 		B8ED3BFF1FC34E6F00B94DBA /* ARProjectTests */ = {
 			isa = PBXGroup;
 			children = (
-				B8ED3C1E1FC35F6400B94DBA /* Models */,
+				B8ED3C1E1FC35F6400B94DBA /* Entities */,
 				B8ED3C001FC34E6F00B94DBA /* ARProjectTests.swift */,
 				B8ED3C021FC34E6F00B94DBA /* Info.plist */,
 			);
@@ -137,20 +141,38 @@
 			path = ARProjectUITests;
 			sourceTree = "<group>";
 		};
-		B8ED3C1B1FC35EC000B94DBA /* Models */ = {
+		B8ED3C1E1FC35F6400B94DBA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B8ED3C261FC371A700B94DBA /* Animals */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B8ED3C221FC369BB00B94DBA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B8ED3C231FC369C500B94DBA /* Animals */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B8ED3C231FC369C500B94DBA /* Animals */ = {
 			isa = PBXGroup;
 			children = (
 				B8ED3C1C1FC35ED800B94DBA /* Animal.swift */,
+				B8ED3C241FC369D800B94DBA /* AnimalLogic.swift */,
 			);
-			path = Models;
+			path = Animals;
 			sourceTree = "<group>";
 		};
-		B8ED3C1E1FC35F6400B94DBA /* Models */ = {
+		B8ED3C261FC371A700B94DBA /* Animals */ = {
 			isa = PBXGroup;
 			children = (
 				B8ED3C1F1FC35F7600B94DBA /* AnimalTests.swift */,
+				B8ED3C271FC371B500B94DBA /* AnimalLogicTests.swift */,
 			);
-			path = Models;
+			path = Animals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8ED3C1A1FC353F100B94DBA /* MainViewController.swift in Sources */,
+				B8ED3C251FC369D800B94DBA /* AnimalLogic.swift in Sources */,
 				B8ED3C1D1FC35ED800B94DBA /* Animal.swift in Sources */,
 				B8ED3BEE1FC34E6F00B94DBA /* ViewController.swift in Sources */,
 				B8ED3BEA1FC34E6F00B94DBA /* AppDelegate.swift in Sources */,
@@ -301,6 +324,7 @@
 			files = (
 				B8ED3C011FC34E6F00B94DBA /* ARProjectTests.swift in Sources */,
 				B8ED3C201FC35F7600B94DBA /* AnimalTests.swift in Sources */,
+				B8ED3C281FC371B500B94DBA /* AnimalLogicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

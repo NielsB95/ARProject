@@ -15,12 +15,13 @@ class Animal {
     var thirst:Float = 0
     
     //MARK: Constants
-    let hungerRate:Float = 0.01
-    let hungerInterval:Float = 10.0
+    let hungerRate:Float = 5
+    let hungerInterval:Float = 10.0 // Interval in minutes
+    let hungerCritical:Float = 75
     
-    let thirstInterval:Float = 7.5
-    let thirstRate:Float = 0.01
-
+    let thirstRate:Float = 5
+    let thirstInterval:Float = 7.5 // Interval in minutes
+    let thirstCritical:Float = 60
     
     // description acts like a toString method.
     var description:String {return "This is an animal called \(self.name)" }
@@ -42,7 +43,7 @@ class Animal {
         if(hidratationValue < 0) {
             return
         }
-        
+
         self.thirst -= hidratationValue
     }
 }
