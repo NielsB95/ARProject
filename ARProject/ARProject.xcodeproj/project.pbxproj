@@ -15,6 +15,9 @@
 		B8ED3BF61FC34E6F00B94DBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8ED3BF41FC34E6F00B94DBA /* LaunchScreen.storyboard */; };
 		B8ED3C011FC34E6F00B94DBA /* ARProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED3C001FC34E6F00B94DBA /* ARProjectTests.swift */; };
 		B8ED3C0C1FC34E6F00B94DBA /* ARProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED3C0B1FC34E6F00B94DBA /* ARProjectUITests.swift */; };
+		B8ED3C1A1FC353F100B94DBA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED3C191FC353F100B94DBA /* MainViewController.swift */; };
+		B8ED3C1D1FC35ED800B94DBA /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED3C1C1FC35ED800B94DBA /* Animal.swift */; };
+		B8ED3C201FC35F7600B94DBA /* AnimalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8ED3C1F1FC35F7600B94DBA /* AnimalTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		B8ED3C071FC34E6F00B94DBA /* ARProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8ED3C0B1FC34E6F00B94DBA /* ARProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARProjectUITests.swift; sourceTree = "<group>"; };
 		B8ED3C0D1FC34E6F00B94DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8ED3C191FC353F100B94DBA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B8ED3C1C1FC35ED800B94DBA /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		B8ED3C1F1FC35F7600B94DBA /* AnimalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,11 @@
 		B8ED3BE81FC34E6F00B94DBA /* ARProject */ = {
 			isa = PBXGroup;
 			children = (
+				B8ED3C1B1FC35EC000B94DBA /* Models */,
 				B8ED3BE91FC34E6F00B94DBA /* AppDelegate.swift */,
 				B8ED3BEB1FC34E6F00B94DBA /* art.scnassets */,
 				B8ED3BED1FC34E6F00B94DBA /* ViewController.swift */,
+				B8ED3C191FC353F100B94DBA /* MainViewController.swift */,
 				B8ED3BEF1FC34E6F00B94DBA /* Main.storyboard */,
 				B8ED3BF21FC34E6F00B94DBA /* Assets.xcassets */,
 				B8ED3BF41FC34E6F00B94DBA /* LaunchScreen.storyboard */,
@@ -113,6 +121,7 @@
 		B8ED3BFF1FC34E6F00B94DBA /* ARProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				B8ED3C1E1FC35F6400B94DBA /* Models */,
 				B8ED3C001FC34E6F00B94DBA /* ARProjectTests.swift */,
 				B8ED3C021FC34E6F00B94DBA /* Info.plist */,
 			);
@@ -126,6 +135,22 @@
 				B8ED3C0D1FC34E6F00B94DBA /* Info.plist */,
 			);
 			path = ARProjectUITests;
+			sourceTree = "<group>";
+		};
+		B8ED3C1B1FC35EC000B94DBA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8ED3C1C1FC35ED800B94DBA /* Animal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B8ED3C1E1FC35F6400B94DBA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B8ED3C1F1FC35F7600B94DBA /* AnimalTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8ED3C1A1FC353F100B94DBA /* MainViewController.swift in Sources */,
+				B8ED3C1D1FC35ED800B94DBA /* Animal.swift in Sources */,
 				B8ED3BEE1FC34E6F00B94DBA /* ViewController.swift in Sources */,
 				B8ED3BEA1FC34E6F00B94DBA /* AppDelegate.swift in Sources */,
 			);
@@ -273,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8ED3C011FC34E6F00B94DBA /* ARProjectTests.swift in Sources */,
+				B8ED3C201FC35F7600B94DBA /* AnimalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UAC3YGLX2;
 				INFOPLIST_FILE = ARProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NielsB.ARProject;
@@ -445,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UAC3YGLX2;
 				INFOPLIST_FILE = ARProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NielsB.ARProject;
@@ -460,6 +490,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UAC3YGLX2;
 				INFOPLIST_FILE = ARProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NielsB.ARProjectTests;
@@ -476,6 +507,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UAC3YGLX2;
 				INFOPLIST_FILE = ARProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NielsB.ARProjectTests;
@@ -491,6 +523,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UAC3YGLX2;
 				INFOPLIST_FILE = ARProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NielsB.ARProjectUITests;
@@ -506,6 +539,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UAC3YGLX2;
 				INFOPLIST_FILE = ARProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NielsB.ARProjectUITests;
